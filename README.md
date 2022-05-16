@@ -13,25 +13,43 @@
 
 ## Description
 
-- PuriFood is a tool that allows a health conscious
+- **What is PuriFood**: PuriFood is a tool that allows a health conscious
   person to find & share healthy recipes. Users can save
   their favorite recipes, while also creating their own.
   They can view the receipe's & the ingredient's
   nutritional facts. They will be able to search for
   receipes not just by recipe type but by filtering for
   specific food.
+- **MVP**: PuriFood users will be able to create their own
+  recipes and store them onto their MongoDB database.
+  Once created, the user will be able to delete and
+  update their recipes.
+- **Post MVP**: PuriFood Users will be able to save recipes
+  from the EDAMAM API into their database. A user will
+  be able find similar recipes based on categories,
+  country of origin, or ingredients. For the mobile
+  version, they will be able to add ingredients from
+  the recipes into a shopping list.
 
 ## Features
 
-- **Find Recipes**
+- **Find Recipes by Ingredients**
+- **Create Recipes**
+- **Edit Recipes**
+- **Delete Recipes**
+- **Save Favorite Recipes**
 
 ## ERD
+
+![PuriFood ERD](./assets/PuriFood%20ERD.png)
 
 ## APIs Server Routes
 
 ## Wireframes
 
 ## Component Hierarchy
+
+![PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
 
 ## Dependencies
 
@@ -48,6 +66,7 @@
 
 ### APIs
 
+- [spoonacular API](https://spoonacular.com/food-api)
 - [Edamam API](https://www.edamam.com/)
 
 ## Installation
@@ -58,4 +77,4 @@ Using your terminal(Mac OS) cd into a directory you want to
 clone the repo at. Copy the repo URL and run the following command
 in the terminal
 
-        git clone
+        git clone https://github.com/tapia81/puriFood.git
