@@ -41,7 +41,7 @@
 
 ## ERD
 
-- [PuriFood ERD](./assets/PuriFood%20ERD.png)
+![PuriFood ERD](./assets/PuriFood%20ERD.png)
 
 ## APIs Server Routes
 
@@ -49,7 +49,7 @@
 
 ## Component Hierarchy
 
-- [PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
+![PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
 
 ## Dependencies
 
