@@ -47,6 +47,8 @@
 
 ## Wireframes
 
+![PuriFood WireFrame](./assets/PuriFood%WireFrame.png)
+
 ## Component Hierarchy
 
 ![PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
