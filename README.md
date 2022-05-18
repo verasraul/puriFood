@@ -3,7 +3,7 @@
 ## Table of contents 📒
 
 - [Description](#description)
-- [Features](#feautres)
+- [Features](#features)
 - [ERD](#erd)
 - [APIs Server Routes](#apis-server-routes)
 - [Wireframes](#wireframes)
@@ -33,7 +33,7 @@
 
 ## Features
 
-- **Find Recipes by Ingredients**
+- **Search for Recipes by Ingredients**
 - **Create Recipes**
 - **Edit Recipes**
 - **Delete Recipes**
@@ -46,6 +46,8 @@
 ## APIs Server Routes
 
 ## Wireframes
+
+![Desktop WireFrame](./assets/puriFood-wireFrame.png)
 
 ## Component Hierarchy
 
@@ -66,7 +68,6 @@
 
 ### APIs
 
-- [spoonacular API](https://spoonacular.com/food-api)
 - [Edamam API](https://www.edamam.com/)
 
 ## Installation
