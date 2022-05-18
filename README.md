@@ -1,9 +1,11 @@
 # PuriFood 🍖🥑🍉
 
+![PuriFood Banner](./assets/PuriFood%20Banner.png)
+
 ## Table of contents 📒
 
 - [Description](#description)
-- [Features](#feautres)
+- [Features](#features)
 - [ERD](#erd)
 - [APIs Server Routes](#apis-server-routes)
 - [Wireframes](#wireframes)
@@ -33,7 +35,7 @@
 
 ## Features
 
-- **Find Recipes by Ingredients**
+- **Search for Recipes by Ingredients**
 - **Create Recipes**
 - **Edit Recipes**
 - **Delete Recipes**
@@ -45,13 +47,45 @@
 
 ## APIs Server Routes
 
+![PuriFood Server Routes](./assets/PuriFood%20Routes.png)
+
 ## Wireframes
 
-![PuriFood WireFrame](./assets/PuriFood%WireFrame.png)
+![Desktop WireFrame](./assets/puriFood-wireFrame.png)
 
 ## Component Hierarchy
 
 ![PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
+
+    code
+    .
+    │
+    ├── src
+    │   ├── components
+    │   │   ├── Footer.jsx
+    │   │   ├── Layout.jsx
+    │   │   ├── NavigationBar.jsx
+    │   │   ├── RecipeForm.jsx
+    │   │
+    │   ├── pages
+    │   │   ├── CreateRecipe.jsx
+    │   │   ├── EditRecipe.jsx
+    │   │   ├── FindRecipes.jsx
+    │   │   ├── HomePage.jsx
+    │   │   ├── MyRecipes.jsx
+    │   │   ├── RecipeInfo.jsx
+    │   │
+    │   ├── routes
+    │   │    ├── Routes.jsx
+    │   │
+    │   ├── services
+    │   │    ├── apiCalls.js
+    │   │
+    │   ├── App.css
+    │   │
+    │   ├── App.js
+    │   │
+    │   ├── index.js
 
 ## Dependencies
 
@@ -68,7 +102,6 @@
 
 ### APIs
 
-- [spoonacular API](https://spoonacular.com/food-api)
 - [Edamam API](https://www.edamam.com/)
 
 ## Installation
