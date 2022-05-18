@@ -51,7 +51,7 @@
 
 ## Wireframes
 
-![Desktop WireFrame](./assets/puriFood-wireFrame.png)
+![PuriFood Wireframe](./assets/PurifoodHome.png)
 
 ## Component Hierarchy
 
