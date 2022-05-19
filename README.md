@@ -45,7 +45,7 @@
 
 ![PuriFood ERD](./assets/PuriFood%20ERD.png)
 
-## APIs Server Routes
+## Backend Server Routes
 
 ![PuriFood Server Routes](./assets/PuriFood%20Routes.png)
 
