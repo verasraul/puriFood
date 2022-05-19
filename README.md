@@ -89,15 +89,20 @@
 
 ## Dependencies
 
+- [NodeJS](https://nodejs.org/en/)
 - [Axios](https://github.com/axios/axios)
 - [Cors](https://www.npmjs.com/package/cors)
-- [Express](https://expressjs.com/en/starter/installing.html)
+- [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Morgan](https://www.npmjs.com/package/morgan)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 
-### CSS FrameWorks
+### FrameWorks
 
+- [ReactJS](https://reactjs.org/)
+- [Express](https://expressjs.com/en/starter/installing.html)
 - [Material UI](https://mui.com/)
 
 ### APIs
