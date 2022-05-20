@@ -10,6 +10,10 @@ function App() {
         autoComplete="Off"
         className="app-searchInput" 
         />
+        <select className="app-healthLabels">
+          <option value="vegan">Vegan</option>
+        </select>
+        <input type="submit" value="Get Recipe" className="app-submit" />
       </div>
     </div>
   );
