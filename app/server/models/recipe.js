@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const RecipeSchema = new Schmea({
+const RecipeSchema = new Schema({
   recipeName: {
     type: String,
     require: true,
@@ -10,21 +10,21 @@ const RecipeSchema = new Schmea({
   },
   ingredients: [
     {
+      quantity: {
+        type: String,
+        require: true,
+      },
       ingredientName: {
         type: String,
         require: true,
         trim: true,
         lowercase: true,
       },
-      quantity: {
-        type: Number,
-        require: true,
-      },
     },
   ],
   recipeImage: {
     type: String,
-    require: true,
+    require: false,
     trim: true,
     lowercase: true,
   },
