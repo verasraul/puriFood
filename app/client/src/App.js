@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </select>
         <input type="submit" value="Get Recipe" className="app-submit" />
       </div>
+      <Footer/>
     </div>
   );
 }
