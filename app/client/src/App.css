@@ -30,3 +30,14 @@
     /* makr cursor a finfer pointer on hover */
     cursor: pointer;
 }
+
+.app-submit:hover{
+    padding: 6px 16px;
+    font-size: 17px;
+    margin-left: 6px;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 15px;
+    color: green;
+    cursor: pointer;
+}
