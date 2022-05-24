@@ -2,6 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import { useState } from 'react';
 import axios from "axios";
+import RecipeTile from "./components/RecipeTile";
 
 
 function App() {
@@ -46,7 +47,11 @@ function App() {
         </select>
         <input className="app-submit" type="submit" value="Get Recipe"  />
       </form>
-
+      
+        {recipes.map((recipe) => {
+          return <RecipeTile recipe={recipe} />;
+        })}
+     
 
       <Footer/>
     </div>

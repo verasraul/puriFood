@@ -1,10 +1,9 @@
 import React from 'react'
 
-function RecipeTile() {
+function RecipeTile({recipe}) {
   return (
     <div>
-        RecipeTile
-    
+      <p>{ recipe["recipe"]["label"] }</p>
     </div>
   )
 }
