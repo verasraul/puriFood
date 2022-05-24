@@ -37,10 +37,17 @@ function App() {
         onChange={ (e) => {setQuery(e.target.value)}}
         />
         <select className="app-healthLabels">
-          <option value="vegan">Vegan</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("vegan")}}>Vegan</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("vegetarian")}}>Vegetarian</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("low-sugar")}}>Low-Sugar</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("dairy-free")}}>Dairy-Free</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("immuno-supportive")}}>Immuno-Supportive</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("gluten-free")}}>Gluten-Free</option>
         </select>
         <input className="app-submit" type="submit" value="Get Recipe"  />
       </form>
+
+
       <Footer/>
     </div>
   );
