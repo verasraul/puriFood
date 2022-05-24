@@ -1,6 +1,8 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import { useState } from 'react';
 import axios from "axios";
+
 
 function App() {
   const url = `https://api.edamam.com/api/recipes/v2?type=public&q=ginger&app_id=${process.env.REACT_APP_EDAMAM_RECIPE_ID_KEY}&app_key=${process.env.REACT_APP_EDAMAM_RECIPE_API_KEY}`
@@ -29,6 +31,7 @@ function App() {
         </select>
         <input className="app-submit" type="submit" value="Get Recipe"  />
       </div>
+      <Footer/>
     </div>
   );
 }
