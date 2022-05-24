@@ -1,7 +1,10 @@
+import "./App.css";
+
 function App() {
   return (
-    <div className="App">
-      <h1><u>PuriFood</u></h1>
+    <div className="app">
+      <h1><u>PuriFood</u>
+      </h1>
 
       <div className="app-searchForm">
         <input 
