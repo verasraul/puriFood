@@ -1,16 +1,26 @@
+:root{
+    --headerColor:rgb(131, 133, 151);
+    --footerColor: rgba(248, 109, 66, 0.932);
+    --backdropColor: rgb(131, 255, 228);
+    --mainColor: rgb(137, 255, 137);
+    --backgroundColor: bisque;
+    --backgroundColor2: burlywood;
+    --textColor:rgb(253, 250, 237);
+     
+}
 .app{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 40px 24px;
-    border-top: 15px solid rgb(150, 148, 139);
+    border-top: 15px solid var(--headerColor);
     background-color: bisque;
     
 }
 
 h1{
-    color: rgb(253, 250, 237);
+    color: var(--headerColor);
     
             text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
 }
@@ -28,8 +38,8 @@ h1{
     font-size: 17px;
     border: none;
     border-radius: 10px;
-    color:blanchedalmond;
-    background-color: burlywood;
+    color:var(--textColor);
+    background-color: var(--backgroundColor2);
 
     
 }
@@ -38,11 +48,11 @@ h1{
     padding: 6px 16px;
     font-size: 17px;
     margin-left: 6px;
-    background-color: green;
-
+    background-color:var(--mainColor);
+    
     border: none;
-    border-radius: 16px;
-    color: white;
+    border-radius: 15px;
+    color: var(--textColor);
     /* make cursor a finger pointer on hover */
     cursor: pointer;
 }
@@ -51,10 +61,9 @@ h1{
     border:none;
     border-radius: 8px;
     margin: 10px;
-    margin-left: 6px;
-    padding: 5px 10px;
+    padding: 5px;
     font-size: 14px;
-    background-color: burlywood;
+    background-color: var(--backgroundColor2);
 
 }
 
@@ -65,20 +74,31 @@ h1{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(214, 70, 34, 0.932);
-    color: rgba(255, 255, 255, 0.685);
+    background-color: var(--footerColor);
+    color: var(--textColor);
     align-items: flex-end;
     
     }
+.app-submit:hover{
+    padding: 6px 16px;
+    font-size: 17px;
+    margin-left: 6px;
+    background-color: var(--textColor);
+    border: 2px var(--textColor);
+    border-radius: 15px;
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
 
 .app-submit:hover{
     padding: 6px 16px;
     font-size: 17px;
     margin-left: 6px;
-    background-color: white;
-    border: 2px solid green;
+    background-color: var(--headerColor);
+    border: 2px solid var(--textColor);
     border-radius: 15px;
-    color: green;
+    color: var(--mainColor);
     cursor: pointer;
 }
 
