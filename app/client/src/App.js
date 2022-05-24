@@ -5,13 +5,21 @@ import axios from "axios";
 
 
 function App() {
-  const url = `https://api.edamam.com/api/recipes/v2?type=public&q=ginger&app_id=${process.env.REACT_APP_EDAMAM_RECIPE_ID_KEY}&app_key=${process.env.REACT_APP_EDAMAM_RECIPE_API_KEY}`
+  const [query, setQuery] = useState(" ");
   const [recipes, setRecipes] = useState([]);
+  const [healthLabel, setHealthLabel] = useState("vegetarian");
+  const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${process.env.REACT_APP_EDAMAM_RECIPE_ID_KEY}&app_key=${process.env.REACT_APP_EDAMAM_RECIPE_API_KEY}&health=${healthLabel}`
 
   const getRecipeInfo = async() => {
     let response = await axios.get(url);
     setRecipes(response.data.hits);
     console.log(response.data.hits);
+  };
+
+  const onSubmit = (e) => {
+    // will prevent page from reloading when submiting the form/query
+    e.preventDefault();
+    getRecipeInfo();
   };
 
   return (
@@ -20,17 +28,19 @@ function App() {
         <u>PuriFood</u>
       </h1>
 
-      <div className="app-searchForm">
+      <form className="app-searchForm" onSubmit={ onSubmit }>
         <input className="app-searchInput"
         type="text" 
         placeholder="Type the ingredient"
-        autoComplete="Off" 
+        autoComplete="Off"
+        value={query}
+        onChange={ (e) => {setQuery(e.target.value)}}
         />
         <select className="app-healthLabels">
           <option value="vegan">Vegan</option>
         </select>
         <input className="app-submit" type="submit" value="Get Recipe"  />
-      </div>
+      </form>
       <Footer/>
     </div>
   );

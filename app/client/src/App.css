@@ -39,11 +39,11 @@ h1{
     font-size: 17px;
     margin-left: 6px;
     background-color: green;
-    
+
     border: none;
-    border-radius: 15px;
+    border-radius: 16px;
     color: white;
-    /* make cursor a finfer pointer on hover */
+    /* make cursor a finger pointer on hover */
     cursor: pointer;
 }
 
@@ -51,7 +51,8 @@ h1{
     border:none;
     border-radius: 8px;
     margin: 10px;
-    padding: 5px;
+    margin-left: 6px;
+    padding: 5px 10px;
     font-size: 14px;
     background-color: burlywood;
 
