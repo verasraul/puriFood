@@ -47,11 +47,11 @@ function App() {
         </select>
         <input className="app-submit" type="submit" value="Get Recipe"  />
       </form>
-      
+      <div className="app-recipes-list">
         {recipes.map((recipe) => {
-          return <RecipeTile key="{item}" recipe={recipe} />;
+          return <RecipeTile recipe={recipe} />;
         })}
-     
+      </div>
 
       <Footer/>
     </div>

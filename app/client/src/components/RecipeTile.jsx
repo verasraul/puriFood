@@ -1,12 +1,13 @@
+import "../styling.css"
 import React from 'react'
 
 function RecipeTile({recipe}) {
   return (
     <div className='recipeTile'>
-      <p>{ recipe["recipe"]["label"] }</p>
-      <img src={recipe['recipe']['image']} alt='title-image' />
+      <img className='recipeTile-image' src={recipe['recipe']['image']} alt='title-image' />
+      <p className='recipeTile-name'>{ recipe["recipe"]["label"] }</p>
     </div>
-  )
+  );
 }
 
 export default RecipeTile
