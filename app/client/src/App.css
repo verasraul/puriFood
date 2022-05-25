@@ -15,6 +15,7 @@
     align-items: center;
     padding: 40px 24px;
     border-top: 15px solid var(--headerColor);
+    color: black;
     background-color: bisque;
     
 }
