@@ -13,6 +13,7 @@ function RecipeTile({recipe}) {
       />
       </a>
       <p className="recipeTile-name">{ recipe["recipe"]["label"] }</p>
+      <p className="recipeTile-source"> Source: {recipe["recipe"]["source"]}</p>
     </div>
     // )
   )
