@@ -13,9 +13,9 @@ function RecipeTile({recipe}) {
       />
       </a>
       <p className="recipeTile-name">{ recipe["recipe"]["label"] }</p>
-      <p className="recipeTile-source">
+      <p className="recipeTile-recipes">
         {recipe["recipe"]["ingredients"].map((ingredient) => {
-          return <p>{ingredient.text}</p>
+          return <p className="recipeTile-ingredients">{ingredient.text}</p>
         })}
         </p>
     </div>
