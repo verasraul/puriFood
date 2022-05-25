@@ -118,3 +118,23 @@ clone the repo at. Copy the repo URL and run the following command
 in the terminal
 
         git clone https://github.com/tapia81/puriFood.git
+
+
+**Step 2: Install Dependencies**
+
+From your terminal cd into repo and type:
+    npm i axios cors mongoose nodemon express morgan
+
+
+**Step 3: Setup .env Files**
+
+(must have an api id/key from Edamam API, see reference above)
+In your repo, create a files named .env inside of the src/ directory and type this inside of it and save it:
+    REACT_APP_EDAMAM_RECIPE_ID_KEY=<your-id-key>
+    REACT_APP_EDAMAM_RECIPE_API_KEY=<your-api-key>
+
+
+**Step 4: Run React App**
+From your terminal (while inside of your project/repo folder) run the following command:
+
+      npm start
