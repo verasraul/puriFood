@@ -1,13 +1,21 @@
-import "../styling.css"
-import React from 'react'
+import React from "react";
+import "../styling.css";
 
 function RecipeTile({recipe}) {
   return (
-    <div className='recipeTile'>
-      <img className='recipeTile-image' src={recipe['recipe']['image']} alt='title-image' />
-      <p className='recipeTile-name'>{ recipe["recipe"]["label"] }</p>
+    // create a filter to display images with certain extensions and not recipes with missing images
+    // recipe["recipe"]["image"].match(/\.(jpeg|jpg|gif|png)$/) != null && ( 
+    <div className="recipeTile">
+      <a href={recipe["recipe"]["url"]}>
+      <img className="recipeTile-image" 
+      src={recipe["recipe"]["image"]} 
+      alt="title-image" 
+      />
+      </a>
+      <p className="recipeTile-name">{ recipe["recipe"]["label"] }</p>
     </div>
-  );
+    // )
+  )
 }
 
-export default RecipeTile
+export default RecipeTile;

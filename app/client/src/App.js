@@ -49,7 +49,7 @@ function App() {
       </form>
       <div className="app-recipes-list">
         {recipes.map((recipe) => {
-          return <RecipeTile recipe={recipe} />;
+          return <RecipeTile key={recipe.uniqueId} recipe={recipe} />;
         })}
       </div>
 
