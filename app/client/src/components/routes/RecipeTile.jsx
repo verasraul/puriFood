@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling.css";
+import "../../styling.css";
 
 function RecipeTile({recipe}) {
   return (
