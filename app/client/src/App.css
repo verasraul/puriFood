@@ -1,10 +1,10 @@
 :root{
-    --headerColor:rgb(131, 133, 151);
-    --footerColor: rgba(248, 109, 66, 0.932);
-    --backdropColor: rgb(131, 255, 228);
-    --mainColor: rgb(137, 255, 137);
-    --backgroundColor: bisque;
-    --backgroundColor2: burlywood;
+    --headerColor:rgb(212, 161, 102);
+    --footerColor: rgba(158, 105, 80, 0.932);
+    --backdropColor: rgb(211, 238, 232);
+    --mainColor: rgb(100, 175, 100);
+    --backgroundColor: rgb(250, 235, 212);
+    --backgroundColor2: rgb(204, 179, 148);
     --textColor:rgb(253, 250, 237);
      
 }
@@ -16,18 +16,20 @@
     padding: 40px 24px;
     border-top: 15px solid var(--headerColor);
     color: black;
-    background-color: bisque;
+    font-family: 'Quattrocento', serif;
+
     
 }
 
 h1{
-    color: var(--headerColor);
+   color: var(--mainColor) 
+    ;
     
-            text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
 }
 
 .GetNewRecipes-searchForm{
     margin-top: 17px;
+    
    
     
 }
@@ -36,13 +38,21 @@ h1{
     padding: 6px 16px;
     min-width: 200px;
     max-width: 100vw;
-    font-size: 17px;
+    font-size: 18px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color:var(--textColor);
     background-color: var(--backgroundColor2);
+    font-family: 'Quattrocento', serif;
+    
 
     
+}
+.searchIcon{
+    color: var(--textColor);
+    position: relative;
+    right: 24px;
+    pointer-events: none;
 }
 
 .GetNewRecipes-submit{
@@ -50,11 +60,11 @@ h1{
     font-size: 17px;
     margin-left: 6px;
     background-color:var(--mainColor);
+    font-family: 'Quattrocento', serif;
     
     border: none;
     border-radius: 15px;
     color: var(--textColor);
-    /* make cursor a finger pointer on hover */
     cursor: pointer;
 }
 
@@ -62,18 +72,30 @@ h1{
     border:none;
     border-radius: 8px;
     margin: 10px;
-    padding: 5px;
-    font-size: 14px;
+    padding: 7px;
+    font-size: 16px;
+    color: var(--textColor);
     background-color: var(--backgroundColor2);
+    font-family: 'Quattrocento', serif;
 
+}
+
+.app-healthLabels:after{
+    border: var(--mainColor);
+    background: var(--mainColor);
+}
+
+.app-healthLabels:active{
+    background: var(--backdropColor);
+    border: var(--footerColor);
 }
 
 .footer {
 
     display: flex;
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -18px;
     width: 100%;
     background-color: var(--footerColor);
     color: var(--textColor);
@@ -91,6 +113,7 @@ h1{
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
 .GetNewRecipes-submit:hover{
     padding: 6px 16px;
@@ -99,7 +122,11 @@ h1{
     background-color: var(--headerColor);
     border: 2px solid var(--textColor);
     border-radius: 15px;
+=======
+.app-submit:active{
+>>>>>>> main
     color: var(--mainColor);
-    cursor: pointer;
+    background-color: var(--backdropColor);
 }
+
 
