@@ -2,10 +2,10 @@
     --headerColor:rgb(212, 161, 102);
     --footerColor: rgba(158, 105, 80, 0.932);
     --backdropColor: rgb(211, 238, 232);
-    --mainColor: rgb(100, 175, 100);
-    --backgroundColor: rgb(250, 235, 212);
+    --mainColor: rgb(162, 202, 162);
+    --backgroundColor: rgb(124, 140, 180);
     --backgroundColor2: rgb(204, 179, 148);
-    --textColor:rgb(253, 250, 237);
+    --textColor:rgb(0, 0, 0);
      
 }
 .GetNewRecipes{
@@ -21,6 +21,9 @@
     
 }
 
+.recipeTile-ingredients{
+    color: white;
+}
 h1{
    color: var(--mainColor) 
     ;
@@ -64,8 +67,11 @@ h1{
     font-family: 'Quattrocento', serif;
     border: none;
     border-radius: 15px;
-    color: var(--textColor);
+    color: whitesmoke;
     cursor: pointer;
+}
+.recipeTile-name{
+    color: whitesmoke;
 }
 .GetNewRecipes-submit:hover{
     padding: 6px 16px;
@@ -91,27 +97,28 @@ h1{
 
 }
 
-.app-healthLabels:after{
+.GetNewRecipes-healthLabels:after{
     border: var(--mainColor);
     background: var(--mainColor);
 }
-
-.app-healthLabels:active{
+.GetNewRecipes-healthLabels:active{
     background: var(--backdropColor);
     border: var(--footerColor);
 }
 
 .footer {
 
-    display: flex;
-    position: absolute;
+    /* display: flex; */
+    position: fixed;
     left: 0;
     bottom: -18px;
     width: 100%;
     background-color: var(--footerColor);
     color: var(--textColor);
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    text-align: center;
+    height: 80px;
     
-    }
+}
 
 
