@@ -3,6 +3,11 @@ import Footer from "./components/Footer";
 import { useState } from 'react';
 import axios from "axios";
 import RecipeTile from "./components/RecipeTile";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBowlRice } from "@fortawesome/free-solid-svg-icons";
+
+
 
 
 function App() {
@@ -24,19 +29,23 @@ function App() {
   };
 
   return (
+    
     <div className="app">
       <h1 onClick={ getRecipeInfo }>
-        <u>PuriFood</u>
+      <FontAwesomeIcon icon={faBowlRice}/><u>PuriFood</u>
       </h1>
 
+      
+
       <form className="app-searchForm" onSubmit={ onSubmit }>
+        
         <input className="app-searchInput"
         type="text" 
         placeholder="Type the ingredient"
         autoComplete="Off"
         value={query}
         onChange={ (e) => {setQuery(e.target.value)}}
-        />
+        /><FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon"></FontAwesomeIcon>
         <select className="app-healthLabels">
           <option value="vegan" onClick={ () => { setHealthLabel("vegan")}}>Vegan</option>
           <option value="vegan" onClick={ () => { setHealthLabel("vegetarian")}}>Vegetarian</option>
@@ -52,10 +61,12 @@ function App() {
           return <RecipeTile key={recipe.uniqueId} recipe={recipe} />;
         })}
       </div>
-
-      <Footer/>
+<div>
+  <Footer/>
+</div>
+      
     </div>
   );
-}
+  }
 
 export default App;
