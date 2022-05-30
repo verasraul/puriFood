@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Header from "./components/shared/Header";
@@ -33,3 +34,18 @@ function App() {
 }
 
 export default App;
+=======
+import "./App.css";
+import React from "react";
+import { PageRoutes } from "./routes/Routes";
+
+function App() {
+  return (
+    <div className="app">
+      <PageRoutes />
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> main
