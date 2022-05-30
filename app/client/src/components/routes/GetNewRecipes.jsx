@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import axios from "axios";
 import RecipeTile from "./RecipeTile";
+import Layout from '../shared/Layout';
 
 
 function GetNewRecipes() {
@@ -22,10 +23,14 @@ function GetNewRecipes() {
   };
 
   return (
+    <Layout>
     <div className="GetNewRecipes">
       <h1 onClick={ getRecipeInfo }>
-        <u>PuriFood</u>
+        Get Inspired!
       </h1>
+      <p>
+        Search for new recipes
+      </p>
 
       <form className="GetNewRecipes-searchForm" onSubmit={ onSubmit }>
         <input className="GetNewRecipes-searchInput"
@@ -43,7 +48,7 @@ function GetNewRecipes() {
           <option value="vegan" onClick={ () => { setHealthLabel("immuno-supportive")}}>Immuno-Supportive</option>
           <option value="vegan" onClick={ () => { setHealthLabel("gluten-free")}}>Gluten-Free</option>
         </select>
-        <input className="GetNewRecipes-submit" type="submit" value="Get Recipe"  />
+        <input className="GetNewRecipes-submit" type="submit" value="Get Recipes"  />
       </form>
       <div className="GetNewRecipes-recipes-list">
         {recipes.map((recipe) => {
@@ -51,6 +56,7 @@ function GetNewRecipes() {
         })}
       </div>
     </div>
+    </Layout>
   );
 }
 
