@@ -167,19 +167,30 @@ h1 {
   width: 200px;
 }
 
-.my-recipes-container {
+.saved-recipes-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
+  padding: 40px 24px;
+  color: black;
+  font-family: "Quattrocento", serif;
   min-height: 70vh;
   width: 100vw;
 }
 
-.my-recipes-container button {
+.saved-recipes-container button {
   padding: 0.2%;
   font-size: 0.8em;
+}
+
+.listed-recipes-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  min-height: 70vh;
+  width: 90vw;
 }
 
 .listed-recipe {
@@ -187,9 +198,10 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  height: 60vh;
-  width: 28vw;
+  text-align: center;
+  height: 50vh;
+  width: 40vw;
+  font-size: 0.5em;
 }
 
 .listed-recipe img {
@@ -211,6 +223,16 @@ h1 {
   font-size: 1.3em;
 }
 
+.recipe-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  color: black;
+  min-height: 70vh;
+  width: 100vw;
+}
+
 .recipe-form {
   display: flex;
   flex-direction: column;
@@ -229,6 +251,46 @@ h1 {
   text-align: center;
 }
 
-.recipe-form input:nth-child(4) {
+.recipe-form input:nth-child(3) {
   height: 30vh;
+}
+
+.recipe-post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 70vh;
+  width: 100vw;
+}
+
+.recipe-post-container h1 {
+  font-size: 3em;
+}
+
+.recipe-post-container p {
+  font-size: 1.7em;
+}
+.recipe-post-container img {
+  height: 400px;
+  width: 500px;
+}
+
+.recipe-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 10vh;
+  width: 50vw;
+  font-size: 2em;
+}
+.recipe-buttons .button {
+  border: none;
+  text-align: center;
+  height: 4vh;
+  width: 5vw;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Quattrocento", serif;
 }
