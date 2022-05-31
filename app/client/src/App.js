@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import Header from "./components/shared/Header";
 import Footer from "./components/shared/Footer";
-import GetNewRecipes from "./components/routes/GetNewRecipes";
+import GetNewRecipes from "./components/routes/Home";
 import Home from "./components/routes/Home";
 import Items from "./components/routes/Items";
 import ItemCreate from "./components/routes/ItemCreate";
@@ -23,10 +21,12 @@ function App() {
 
        <Routes>
          <Route path="/" element={ <GetNewRecipes /> } />
-         <Route path="saved-recipes" element={ <Items /> } />
+         <Route path="/recipes" element={<MyRecipes />} />
+         <Route path="/recipes/create-recipe" element={<RecipeForm />} />
+         {/* <Route path="saved-recipes" element={ <Items /> } />
          <Route path="create-recipes" element={ <ItemCreate /> } />
          <Route path="saved-recipes/:id" element={ <Item />} />
-         <Route path="saved-recipes/:id/edit" element={ <ItemEdit /> } />
+         <Route path="saved-recipes/:id/edit" element={ <ItemEdit /> } /> */}
         
        </Routes>
     </div>
@@ -34,18 +34,3 @@ function App() {
 }
 
 export default App;
-=======
-import "./App.css";
-import React from "react";
-import { PageRoutes } from "./routes/Routes";
-
-function App() {
-  return (
-    <div className="app">
-      <PageRoutes />
-    </div>
-  );
-}
-
-export default App;
->>>>>>> main

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import RecipeTile from "../components/RecipeTile";
+import RecipeTile from "../components/routes/RecipeTile";
 import { Layout } from "../components/Layout";
 
 export const HomePage = () => {
