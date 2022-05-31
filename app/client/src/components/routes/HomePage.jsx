@@ -44,7 +44,7 @@ function HomePage() {
             }}
             
           /><FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon"/>
-          />
+
           <select className="GetNewRecipes-healthLabels">
             <option
               value="vegan"
