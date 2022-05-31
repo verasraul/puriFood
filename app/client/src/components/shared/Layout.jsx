@@ -1,19 +1,18 @@
-import Nav from './Nav';
+import NavigationBar from "./NavigationBar";
 import Footer from './Footer';
 
+function Layout(props) {
 
-const Layout = (props) => {
-    return (
-        <div className='layout'>
-            {/* <Header /> */}
-            <h1 className='app-title'> Purifood </h1>
-            <Nav />
+  return (
+    <div className="layout-container">
+      
+      <NavigationBar />
 
-            {props.children}
+      <main>{props.children}</main>
 
-            <Footer />
-        </div>
-    )
+      <Footer />
+    </div>
+  );
 };
 
 export default Layout;
