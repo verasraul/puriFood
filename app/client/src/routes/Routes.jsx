@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
-import { MyRecipes } from "../pages/MyRecipes";
+import { MyRecipes } from "../components/shared/MyRecipes";
 import { RecipeForm } from "../components/RecipeForm";
 export const PageRoutes = () => {
   return (
