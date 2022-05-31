@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import NavLink  from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Layout from "./Layout";
 
 

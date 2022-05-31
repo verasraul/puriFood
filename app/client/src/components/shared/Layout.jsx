@@ -1,4 +1,4 @@
-import { NavigationBar } from "./NavigationBar";
+import NavigationBar from "./NavigationBar";
 import Footer from './Footer';
 
 function Layout(props) {
