@@ -39,61 +39,21 @@ function HomePage() {
               setQuery(e.target.value);
             }}
           />
-          <select className="GetNewRecipes-healthLabels">
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("vegan");
-              }}
-            >
-              Vegan
-            </option>
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("vegetarian");
-              }}
-            >
-              Vegetarian
-            </option>
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("low-sugar");
-              }}
-            >
-              Low-Sugar
-            </option>
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("dairy-free");
-              }}
-            >
-              Dairy-Free
-            </option>
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("immuno-supportive");
-              }}
-            >
-              Immuno-Supportive
-            </option>
-            <option
-              value="vegan"
-              onClick={() => {
-                setHealthLabel("gluten-free");
-              }}
-            >
-              Gluten-Free
-            </option>
-          </select>
-          <input
+        <select className="GetNewRecipes-healthLabels">
+          <option value="vegan" onClick={ () => { setHealthLabel("vegan")}}>Vegan</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("vegetarian")}}>Vegetarian</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("low-sugar")}}>Low-Sugar</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("dairy-free")}}>Dairy-Free</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("immuno-supportive")}}>Immuno-Supportive</option>
+          <option value="vegan" onClick={ () => { setHealthLabel("gluten-free")}}>Gluten-Free</option>
+        </select>
+
+        <input
             className="GetNewRecipes-submit"
             type="submit"
             value="Get Recipe"
           />
+
         </form>
         <div className="GetNewRecipes-recipes-list-container">
           {recipes.map((recipe, key) => {
