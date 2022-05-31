@@ -35,7 +35,7 @@ function RecipeEdit() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-      url: `http://localhost:3001/recipes/${id}`,
+      url: `http://localhost:3001/recipes/${id}/update-recipe`,
       method: "PUT",
       data: recipe,
     })
