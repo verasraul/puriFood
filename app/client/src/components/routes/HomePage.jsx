@@ -2,6 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import RecipeTile from "./RecipeTile";
 import Layout from "../shared/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass,faBowlRice} from "@fortawesome/free-solid-svg-icons";
+
 
 function HomePage() {
   const [query, setQuery] = useState(" ");
@@ -26,7 +29,7 @@ function HomePage() {
     <Layout>
       <div className="GetNewRecipes">
         <h1 onClick={getRecipeInfo}>
-          <u>PuriFood</u>
+          <u><FontAwesomeIcon icon={faBowlRice}/> PuriFood</u>
         </h1>
 
         <form className="GetNewRecipes-searchForm" onSubmit={onSubmit}>
@@ -39,6 +42,8 @@ function HomePage() {
             onChange={(e) => {
               setQuery(e.target.value);
             }}
+            
+          /><FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon"/>
           />
           <select className="GetNewRecipes-healthLabels">
             <option
@@ -90,6 +95,7 @@ function HomePage() {
               Gluten-Free
             </option>
           </select>
+
 
           <input
             className="GetNewRecipes-submit"
