@@ -1,5 +1,7 @@
 # PuriFood 🍖🥑🍉
 
+![PuriFood Banner](./assets/PuriFood%20Banner.png)
+
 ## Table of contents 📒
 
 - [Description](#description)
@@ -43,27 +45,64 @@
 
 ![PuriFood ERD](./assets/PuriFood%20ERD.png)
 
-## APIs Server Routes
+## Backend Server Routes
+
+![PuriFood Server Routes](./assets/PuriFood%20Routes.png)
 
 ## Wireframes
 
-![Desktop WireFrame](./assets/puriFood-wireFrame.png)
+![PuriFood Wireframe](./assets/PurifoodHome.png)
 
 ## Component Hierarchy
 
 ![PuriFood Component Hierarchy](./assets/PuriFood%20Hierarchy.png)
 
+    code
+    .
+    │
+    ├── src
+    │   ├── components
+    │   │   ├── Footer.jsx
+    │   │   ├── Layout.jsx
+    │   │   ├── NavigationBar.jsx
+    │   │   ├── RecipeForm.jsx
+    │   │
+    │   ├── pages
+    │   │   ├── CreateRecipe.jsx
+    │   │   ├── EditRecipe.jsx
+    │   │   ├── FindRecipes.jsx
+    │   │   ├── HomePage.jsx
+    │   │   ├── MyRecipes.jsx
+    │   │   ├── RecipeInfo.jsx
+    │   │
+    │   ├── routes
+    │   │    ├── Routes.jsx
+    │   │
+    │   ├── services
+    │   │    ├── apiCalls.js
+    │   │
+    │   ├── App.css
+    │   │
+    │   ├── App.js
+    │   │
+    │   ├── index.js
+
 ## Dependencies
 
+- [NodeJS](https://nodejs.org/en/)
 - [Axios](https://github.com/axios/axios)
 - [Cors](https://www.npmjs.com/package/cors)
-- [Express](https://expressjs.com/en/starter/installing.html)
+- [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://www.npmjs.com/package/mongoose)
 - [Morgan](https://www.npmjs.com/package/morgan)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 
-### CSS FrameWorks
+### FrameWorks
 
+- [ReactJS](https://reactjs.org/)
+- [Express](https://expressjs.com/en/starter/installing.html)
 - [Material UI](https://mui.com/)
 
 ### APIs
@@ -79,3 +118,23 @@ clone the repo at. Copy the repo URL and run the following command
 in the terminal
 
         git clone https://github.com/tapia81/puriFood.git
+
+
+**Step 2: Install Dependencies**
+
+From your terminal cd into repo and type:
+    npm i axios cors mongoose nodemon express morgan
+
+
+**Step 3: Setup .env Files**
+
+(must have an api id/key from Edamam API, see reference above)
+In your repo, create a files named .env inside of the src/ directory and type this inside of it and save it:
+    REACT_APP_EDAMAM_RECIPE_ID_KEY=<your-id-key>
+    REACT_APP_EDAMAM_RECIPE_API_KEY=<your-api-key>
+
+
+**Step 4: Run React App**
+From your terminal (while inside of your project/repo folder) run the following command:
+
+      npm start
