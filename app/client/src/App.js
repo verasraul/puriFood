@@ -8,9 +8,7 @@ import Item from "./components/routes/Item";
 import ItemEdit from "./components/routes/ItemEdit";
 import RecipeForm from "./components/shared/RecipeForm";
 import MyRecipes from "./components/shared/MyRecipes";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-// import { faBowlRice } from "@fortawesome/free-solid-svg-icons";
+
 
 
 function App() {

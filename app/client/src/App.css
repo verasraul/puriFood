@@ -1,11 +1,12 @@
 :root {
-  --headerColor: rgb(212, 161, 102);
+  --headerColor: rgb(139, 113, 82);
   --footerColor: rgba(158, 105, 80, 0.932);
   --backdropColor: rgb(211, 238, 232);
   --mainColor: rgb(162, 202, 162);
-  --backgroundColor: rgb(124, 140, 180);
+  --backgroundColor: rgb(148, 148, 139);
   --backgroundColor2: rgb(204, 179, 148);
-  --textColor: rgb(0, 0, 0);
+  --textColor: rgb(70, 60, 60
+  );
 }
 
 * {
@@ -19,13 +20,13 @@ a:visited,
 a:active,
 a:hover {
   font-size: 2.5em;
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
 }
 
 body {
-  background-color: rgb(254, 254, 227);
+  background-color: var(--backgroundColor);
 }
 
 h1 {
@@ -35,32 +36,41 @@ h1 {
 .layout-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  min-height: 10vh;
+  max-height:90vh;
   max-width: 100vw;
 }
+.icon{
+  position: relative;
+  left:-12%;
+  top: -5%;
+  z-index:5;
 
+}
 .header-container {
   display: flex;
+  position: absolute;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10%;
+  top: 0%;
   height: 10vh;
   width: 100vw;
-  background-color: rgb(214, 140, 69);
+  background-color: var(--headerColor);
   color: var(--textColor);
 }
 
 .footer-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom:-100px;
   height: 10vh;
   width: 100vw;
-  background-color: rgb(214, 140, 69);
+  background-color: var(--backgroundColor2);
   color: var(--textColor);
 }
 
@@ -100,13 +110,13 @@ h1 {
 .GetNewRecipes-submit {
   padding: 6px 16px;
   font-size: 17px;
+  font-weight: bold;
   margin-left: 6px;
   background-color: var(--mainColor);
-  background-color: green;
   font-family: "Quattrocento", serif;
   border: none;
   border-radius: 15px;
-  color: whitesmoke;
+  color: var(--textColor);
   cursor: pointer;
 }
 
@@ -114,11 +124,9 @@ h1 {
   padding: 6px 16px;
   font-size: 17px;
   margin-left: 6px;
-  background-color: var(--textColor);
   border: 2px var(--textColor);
   border-radius: 15px;
-  color: var(--mainColor);
-  background-color: whitesmoke;
+  background-color: var(--backgroundColor2);
   cursor: pointer;
 }
 
@@ -128,6 +136,7 @@ h1 {
   margin: 10px;
   padding: 7px;
   font-size: 16px;
+  font-weight: bold;
   color: var(--textColor);
   background-color: var(--backgroundColor2);
   font-family: "Quattrocento", serif;
@@ -148,7 +157,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 2%;
   min-height: 60vh;
   width: 100%;
 }
@@ -158,8 +167,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  max-height: 70vh;
   width: 30vw;
+  gap:5%;
+  
+  
 }
 
 .list-item img {
@@ -175,11 +187,18 @@ h1 {
   align-items: center;
   min-height: 70vh;
   width: 100vw;
+  font-family: "Quattrocento", serif;
 }
 
 .my-recipes-container button {
   padding: 0.2%;
-  font-size: 0.8em;
+  font-size: 1em;
+  background-color: var(--mainColor);
+  border-radius: 1em;
+  padding: 1%;
+  border: none;
+  font-family: "Quattrocento", serif;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 .listed-recipe {
@@ -190,6 +209,7 @@ h1 {
   align-items: center;
   height: 60vh;
   width: 28vw;
+  gap: 5%;
 }
 
 .listed-recipe img {
@@ -203,6 +223,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   height: 12vh;
+
 }
 
 .ingredient {
@@ -216,17 +237,25 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-family: "Quattrocento", serif;
   height: 70vh;
   width: 70vh;
-  background-color: white;
+  background-color: var(--backgroundColor2);
+  border-radius: 1em;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-  border: solid white 0.2vw;
+  
+  
 }
 
 .recipe-form input {
   height: 5vh;
   width: 20vw;
+  border-radius: 1em;;
+  background-color: var(--backgroundColor2);
   text-align: center;
+  border-color: var(--textColor);
+  color: var(--textColor);
+  font-family: "Quattrocento", serif;
 }
 
 .recipe-form input:nth-child(4) {
