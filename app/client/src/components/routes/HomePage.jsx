@@ -14,6 +14,7 @@ function HomePage() {
 
   const getRecipeInfo = async () => {
     let response = await axios.get(url);
+    console.log(response.data);
     setRecipes(response.data.hits);
     // console.log(response.data.hits);
   };
@@ -41,22 +42,66 @@ function HomePage() {
             onChange={(e) => {
               setQuery(e.target.value);
             }}
+            
           /><FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon"/>
-        <select className="GetNewRecipes-healthLabels">
-          <option value="vegan" onClick={ () => { setHealthLabel("vegan")}}>Vegan</option>
-          <option value="vegan" onClick={ () => { setHealthLabel("vegetarian")}}>Vegetarian</option>
-          <option value="vegan" onClick={ () => { setHealthLabel("low-sugar")}}>Low-Sugar</option>
-          <option value="vegan" onClick={ () => { setHealthLabel("dairy-free")}}>Dairy-Free</option>
-          <option value="vegan" onClick={ () => { setHealthLabel("immuno-supportive")}}>Immuno-Supportive</option>
-          <option value="vegan" onClick={ () => { setHealthLabel("gluten-free")}}>Gluten-Free</option>
-        </select>
+          />
+          <select className="GetNewRecipes-healthLabels">
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("vegan");
+              }}
+            >
+              Vegan
+            </option>
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("vegetarian");
+              }}
+            >
+              Vegetarian
+            </option>
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("low-sugar");
+              }}
+            >
+              Low-Sugar
+            </option>
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("dairy-free");
+              }}
+            >
+              Dairy-Free
+            </option>
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("immuno-supportive");
+              }}
+            >
+              Immuno-Supportive
+            </option>
+            <option
+              value="vegan"
+              onClick={() => {
+                setHealthLabel("gluten-free");
+              }}
+            >
+              Gluten-Free
+            </option>
+          </select>
 
-        <input
+
+          <input
             className="GetNewRecipes-submit"
             type="submit"
             value="Get Recipe"
           />
-
         </form>
         <div className="GetNewRecipes-recipes-list-container">
           {recipes.map((recipe, key) => {
@@ -70,6 +115,6 @@ function HomePage() {
       </div>
     </Layout>
   );
-};
+}
 
 export default HomePage;

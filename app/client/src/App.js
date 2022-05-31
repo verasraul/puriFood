@@ -1,14 +1,13 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/shared/Footer";
 import HomePage from "./components/routes/HomePage";
-import Items from "./components/routes/Items";
-import ItemCreate from "./components/routes/ItemCreate";
-import Item from "./components/routes/Item";
-import ItemEdit from "./components/routes/ItemEdit";
-import RecipeForm from "./components/shared/RecipeForm";
-import MyRecipes from "./components/shared/MyRecipes";
-
+import Recipes from "./components/routes/Recipes";
+import Recipe from "./components/routes/Recipe";
+import RecipeCreate from "./components/routes/RecipeCreate";
+import RecipeEdit from "./components/routes/RecipeEdit";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+// import { faBowlRice } from "@fortawesome/free-solid-svg-icons";
 
 
 function App() {
@@ -16,18 +15,15 @@ function App() {
 
   return (
     <div className="app">
-       <h3>{ location.state ? location.state.msg: null }</h3>
+      <h3>{location.state ? location.state.msg : null}</h3>
 
-       <Routes>
-         <Route path="/" element={ <HomePage /> } />
-         <Route path="/recipes" element={<MyRecipes />} />
-         <Route path="/recipes/create-recipe" element={<RecipeForm />} />
-         {/* <Route path="saved-recipes" element={ <Items /> } />
-         <Route path="create-recipes" element={ <ItemCreate /> } />
-         <Route path="saved-recipes/:id" element={ <Item />} />
-         <Route path="saved-recipes/:id/edit" element={ <ItemEdit /> } /> */}
-        
-       </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/recipes" element={<Recipes />} />
+        <Route path="/recipes/:id" element={<Recipe />} />
+        <Route path="/recipes/create-recipe" element={<RecipeCreate />} />
+        <Route path="/recipes/:id/update-recipe" element={<RecipeEdit />} />
+      </Routes>
     </div>
   );
 }

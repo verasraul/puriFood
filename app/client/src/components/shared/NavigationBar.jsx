@@ -8,8 +8,9 @@ function NavigationBar() {
       <span className='icon'><FontAwesomeIcon icon={faBowlRice}/>PuriFood</span>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/recipes">My Recipes</NavLink>
+      <NavLink to="/recipes/create-recipe">Create New Recipe</NavLink>
     </header>
   );
-};
+}
 
 export default NavigationBar;
