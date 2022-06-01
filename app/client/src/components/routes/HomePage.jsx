@@ -27,10 +27,16 @@ function HomePage() {
 
   return (
     <Layout>
+      <div className="heroBanner">
       <div className="GetNewRecipes">
         <h1 onClick={getRecipeInfo}>
           <u><FontAwesomeIcon icon={faBowlRice}/> PuriFood</u>
+          <br/>
+          Try out something new and amazing.
         </h1>
+        <p>
+          hundreds of recipes all compiled here.
+          </p>
 
         <form className="GetNewRecipes-searchForm" onSubmit={onSubmit}>
           <input
@@ -103,6 +109,7 @@ function HomePage() {
             value="Get Recipe"
           />
         </form>
+        </div>
         <div className="GetNewRecipes-recipes-list-container">
           {recipes.map((recipe, key) => {
             return (
