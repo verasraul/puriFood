@@ -16,8 +16,6 @@ app.use("/", routes);
 // express.static is in charge of sending static files request to the client.
 app.use(express.static(path.join(__dirname, "client", "build")))
 
-db.on("error", console.error.bind(console, "MongoDB Connection Error"));
-
 // const PORT = process.env.PORT || 3001;
 let port = process.env.PORT;
 if (port == null || port == "") {
@@ -29,7 +27,9 @@ if (port == null || port == "") {
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
-app.listen(...)
+app.listen()
 // app.listen(port);
+
+db.on("error", console.error.bind(console, "MongoDB Connection Error"));
 
 // app.listen(PORT, () => console.log(`Listening on Port ${PORT}`));
