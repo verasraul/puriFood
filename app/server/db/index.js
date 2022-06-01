@@ -1,9 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-
-let MONGO_URI =
-  process.env.PROD_MONGODB || process.env.MONGO_URI || 'mongodb';
-
+let MONGO_URI = process.env.PROD_MONGODB || process.env.MONGO_URI;
+console.log(MONGO_URI);
 mongoose
   .connect(MONGO_URI, {
     useUnifiedTopology: true,
