@@ -15,7 +15,7 @@ function RecipeEdit() {
 
   const fetchData = async () => {
     try {
-      const response = await axios(`http://localhost:3000/recipes/${id}`);
+      const response = await axios(`http://localhost:3001/recipes/${id}`);
       console.log(response);
       setRecipe(response.data);
     } catch (error) {
@@ -35,7 +35,7 @@ function RecipeEdit() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios({
-      url: `http://localhost:3000/recipes/${id}/update-recipe`,
+      url: `http://localhost:3001/recipes/${id}/update-recipe`,
       method: "PUT",
       data: recipe,
     })
