@@ -2,7 +2,7 @@ const Router = require("express");
 const controllers = require("../controllers/index");
 const router = Router();
 
-router.get("/recipes", controllers.getAllMyRecipes);
+router.get("/", controllers.getAllMyRecipes);
 router.post("/recipes/create-recipe", controllers.createRecipe);
 router.get("/recipes/:id", controllers.getRecipeById);
 router.put("/recipes/:id/update-recipe", controllers.updateRecipe);
