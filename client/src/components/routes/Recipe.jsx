@@ -26,7 +26,7 @@ function Recipe() {
 
   const destroy = () => {
     axios({
-      url: `http://localhost:8000/recipes/${id}`,
+      url: `http://localhost:3001/recipes/${id}`,
       method: "DELETE",
     })
       .then(() => setDeleted(true))
